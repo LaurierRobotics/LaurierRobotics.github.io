@@ -2,19 +2,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'IBM Plex Mono', "Roboto Condensed", monospace;
     scroll-behavior: smooth;
-    scroll-margin-top: 20vh;
+    scroll-margin-top: -20vh;
 }
 
 html {
-   background-color: #f8f4f5;
+    background-color: #f8f4f5;
 }
 
-h1{
-    margin-top: 70px;
-    font-weight: bold;
-    font-size: 2.5rem;
+.main-content {
+    max-width: 1300px;
+    margin: auto;
+    float: none;
+    padding: 12px;
+}
+
+h1 {
+    padding: 240px 0 24px 0;
+}
+
+
+h2 {
+    padding: 16px;
 }
 
 a {
@@ -22,31 +32,28 @@ a {
     text-decoration: underline;
 }
 
-.blue-text{
-    color: #041ade;
+.tagline {
+    margin-top: -24px;
+    margin-bottom: 24px;
 }
+
 
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
     background-color: #f8f4f5;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 calc((100vw - 1300px) / 2);
+    padding: 12px;
+    justify-content: space-between;
     border-bottom: 1px solid lightgrey;
-}
-
-.nav-items {
-    background-color: transparent;
 }
 
 nav a {
     text-decoration: none;
     color: #010406;
-    padding: 0 1.5rem;
+    padding: 12px 12px;
     background-color: transparent;
 }
 
@@ -55,10 +62,9 @@ nav a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: underline;
-    padding: 0 2rem;
     background-color: transparent;
     color: #fc006d;
 }
@@ -68,7 +74,7 @@ nav a:hover {
 }
 
 button {
-    padding: 0.5rem 3rem;
+    padding: 12px 24px;
     font-size: 1rem;
     color: #f8f4f5;
     background: #fc006d;
@@ -77,6 +83,10 @@ button {
 
 button:hover {
     background: #041ade;
+}
+
+div {
+    text-align: center;
 }
 
 .hero {
@@ -90,44 +100,54 @@ button:hover {
 }
 
 .about {
-    padding: 200px 100px 300px;
-    font-size: 1.5rem;
-    text-align: center;
+    width: 100%;
+    padding: 15vh 0 30vh 0;
 }
 
-
-section{
-    text-align: center;
-    font-size: 1.5rem;
+.mission-punchline {
+    font-weight: 700;
+    margin: -240px 0 24px 0;
+    color: #e0b61d;
+    font-size: 3rem;
 }
 
-table {
-    margin: 50px auto;
-    padding: 0 calc((100vw - 1300px) / 2);
+.cards, .join{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-th, td {
-    padding: 15px 25px;
+.person{
+    padding: 48px;
 }
 
-.join-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 calc((100vw - 1300px) / 2);
+.project-card{
+    padding: 36px;
+    max-width: 40%;
+    min-width: 300px;
 }
 
-.join-column-right h1 {
-    margin-bottom: 1rem;
+.event{
+    padding: 36px;
+    max-width: 33%;
+    min-width: 300px;
 }
 
-.join-column-right p {
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
+.join-column-left, .join-column-right {
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.join-column-left ul {
+    list-style-type: none;
+    text-align: left;
 }
 
 form {
-    margin: 70px 33vw;
+    max-width: 40%;
+    min-width: 400px;
+    margin: auto;
     border-radius: 5px;
     background-color: white;
     padding: 20px;
@@ -158,29 +178,48 @@ input[type=submit]:hover {
     background: #041ade;
 }
 
-
 footer {
+    margin-top: 96px;
+    width: 100%;
     background-color: #010406;
-    padding: 30px calc((100vw - 1300px) / 2);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
+    padding: 24px;
 }
 
 footer h2{
     color: white;
-    margin: auto;
 }
 
 footer p{
-    padding-top: 2rem;
     color: #e0b61d;
+    padding-bottom: 1.5rem;
 }
 
 .fa img {
     width: 2rem;
 }
 
-.fa:hover {
-    border-bottom: 2px solid #fc006d;
+
+@media (max-width: 786px) {
+    .nav-items a{
+        display: none;
+    }
+    form {
+        max-width: 65%;
+        min-width: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-items{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+        text-align: center;
+    }
+    form {
+        max-width: 100%;
+        min-width: 200px;
+    }
 }

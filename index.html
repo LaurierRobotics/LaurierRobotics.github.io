@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" lang="eng">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Laurier Robotics Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.svg">
 </head>
@@ -12,140 +15,155 @@
 <nav>
     <a href="#home" class="logo">Laurier Robotics</a>
     <div class="nav-items">
-        <a href="#projects">Projects</a> <a href="#events">Events</a> <a href="#contact">Contact</a> <a href="https://charming-flannel-e1d.notion.site/Resources-007c016f0b554603bb1b3d13f05bc4a2?pvs=4">Resources</a> <button onclick="location.href='https://forms.gle/7ibVFWsrYTAdFfJ49'">Join Us</button>
+        <a href="#projects">Projects</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="https://charming-flannel-e1d.notion.site/Resources-007c016f0b554603bb1b3d13f05bc4a2?pvs=4">Resources</a>
+        <button onclick="location.href='https://forms.gle/7ibVFWsrYTAdFfJ49'">Join Us</button>
     </div>
 </nav>
-<div>
-    <section class="hero" id="home">
-        <img src="Hero_animation.png" alt="logo"></img>
-    </section>
-    <section class="about" id="about">
-        <h1 class="mission">You're bored with watching Netflix's bad library alone. We build cool shit and have fun watching Netflix's bad library together. </h1><h1 class="blue-text">Netflix n Chill?</h1>
-    </section>
-    <section class="meet-the-team" id="meet-the-team">
+<div class="main-content">
+    <div class="hero" id="home">
+        <img src="Hero_animation.png" alt="logo">
+    </div>
+    <div class="about" id="about">
+        <h1>You're bored with watching Netflix's bad library alone. We build cool shit and have fun watching Netflix's bad library together.</h1>
+        <h1 class="mission-punchline">Netflix n Chill?</h1>
+    </div>
+    <div class="meet-the-team" id="meet-the-team">
         <h1>Meet the Team.</h1>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Contact</th>
-            </tr>
-            <tr>
-                <td>Lakshya Kawatra</td>
-                <td>Co-President</td>
-                <td>kawa0080@mylaurier.ca</td>
-            </tr>
-            <tr>
-                <td>Max Zhou</td>
-                <td>Co-President</td>
-                <td>zoux0770@mylaurier.ca</td>
-            </tr>
-            <tr>
-                <td>Vino Ranjanathan</td>
-                <td>VP of Outreach</td>
-                <td>nada0500@mylaurier.ca</td>
-            </tr>
-            <tr>
-                <td>Ray Deng</td>
-                <td>VP of Social Media</td>
-                <td>deng7370@mylaurier.ca</td>
-            </tr>
-            <tr>
-                <td>Sourov Paul</td>
-                <td>VP of Hardware Eng</td>
-                <td>paul0320@mylaurier.ca</td>
-            </tr>
-            <tr>
-                <td>Ezekiel Abrahams</td>
-                <td>VP of Finance</td>
-                <td>abra5230@mylaurier.ca</td>
-            </tr>
-            <tr>
-                <td>Sid Khanna</td>
-                <td>VP of Software Eng</td>
-                <td>khan8969@mylaurier.ca</td>
-            </tr>
-        </table>
-    <section class="projects" id="projects">
+        <div class="cards">
+            <div class="person">
+                <img src="#" alt="Lakshya Kawatra">
+                <h4>Lakshya Kawatra</h4>
+                <p>Co-President</p>
+                <p>kawa0080@mylaurier.ca</p>
+            </div>
+
+            <div class="person">
+                <img src="#" alt="Max Zhou">
+                <h4>Max Zhou</h4>
+                <p>Co-President</p>
+                <p>zoux0770@mylaurier.ca</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="person">
+                <img src="#" alt="Vino Ranjanathan">
+                <h4>Vino Ranjanathan</h4>
+                <p>VP of Outreach</p>
+                <p>nada0500@mylaurier.ca</p>
+            </div>
+
+            <div class="person">
+                <img src="#" alt="Ray Deng">
+                <h4>Ray Deng</h4>
+                <p>VP of Social Media</p>
+                <p>deng7370@mylaurier.ca</p>
+            </div>
+
+            <div class="person">
+                <img src="#" alt="Sourov Paul">
+                <h4>Sourov Paul</h4>
+                <p>VP of Hardware Eng</p>
+                <p>paul0320@mylaurier.ca</p>
+            </div>
+
+            <div class="person">
+                <img src="#" alt="Ezekiel Abrahams">
+                <h4>Ezekiel Abrahams</h4>
+                <p>VP of Finance</p>
+                <p>abra5230@mylaurier.ca</p>
+            </div>
+
+            <div class="person">
+                <img src="#" alt="Sid Khanna">
+                <h4>Sid Khanna</h4>
+                <p>VP of Software Eng</p>
+                <p>khan8969@mylaurier.ca</p>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
         <h1>Projects.</h1>
-        <p>Not events. Just projects.</p>
-        <table>
-            <tr>
-                <th>Codename: Gingerbread Man</th>
-                <th>Codename: Cotton Candy</th>
-            </tr>
-            <tr>
-                <td>Want a socially awkward RC car that you can neither drive nor catch? Neither did we. Anyway, we're building it. <a href="https://charming-flannel-e1d.notion.site/Codename-Gingerbread-Man-b4d8a911ec3e4749a142f9b17ee55be2?pvs=4">Check it out!</a> (Careful, it's shy)</td>
-                <td>It's a bird! It's a plane! It's a...neutrally buoyant peristaltic motion propelled beach ball??? Why can it flip me off? <a href="https://charming-flannel-e1d.notion.site/Codename-Cotton-Candy-b2863dd527f645d0b46ef546176730a6?pvs=4">What.</a></td>
-
-            </tr>
-        </table>
-    </section>
-    <section class="events" id="events">
+        <p class="tagline">Not events. Just projects.</p>
+        <div class="cards">
+            <div class="project-card">
+                <h2>Codename: Gingerbread Man</h2>
+                <p>Want a socially awkward RC car that you can neither drive nor catch? Neither did we. Anyway, we're building it. <a href="https://charming-flannel-e1d.notion.site/Codename-Gingerbread-Man-b4d8a911ec3e4749a142f9b17ee55be2?pvs=4">Check it out!</a> (Careful, it's shy)</p>
+            </div>
+            <div class="project-card">
+                <h2>Codename: Cotton Candy</h2>
+                <p>It's a bird! It's a plane! It's a...neutrally buoyant peristaltic motion propelled beach ball??? Why can it flip me off? <a href="https://charming-flannel-e1d.notion.site/Codename-Cotton-Candy-b2863dd527f645d0b46ef546176730a6?pvs=4">What.</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="events" id="events">
         <h1>Events</h1>
-        <p>Different from projects somehow.</p>
-        <table>
-            <tr>
-                <th>Formula RC-E</th>
-                <th>BattleBots</th>
-                <th>Workshops</th>
-            </tr>
-            <tr>
-                <td>“Speed. I am speed. One winner, 30 losers. I eat losers for breakfast. Speed. Faster than fast, quicker than quick. I am Lightning.” -You potentially. <a href="https://charming-flannel-e1d.notion.site/Formula-RC-E-Information-f99b925ab89c4b0bad6cb52f06656185?pvs=4">HUH???</a></td>
-                <td>Build deadly robots. Make 'em destroy each other in parking lots. *Don't* bet money on it. Sound like a good time? You would. Nerd. Click <a href="https://charming-flannel-e1d.notion.site/BattleBots-the-not-t-m-one-dd7950b9283249348f1be7dad35750cb?pvs=4">here</a> to be one of us!</td>
-                <td>We teach your bullies how to hammer and screw shit other than your mom. Also soldering? To see more detail (pinky promise it's not pictures of your mom), click <a href="https://charming-flannel-e1d.notion.site/Workshop-Schedule-9e9e4c6e0f534606abe9f73ed29d9b3b?pvs=4">here</a>. If you can't beat em, join em.</td>
+        <p class="tagline">Different from projects somehow.</p>
+        <div class="cards">
+            <div class="event">
+                <h2>Formula RC-E</h2>
+                <p>“Speed. I am speed. One winner, 30 losers. I eat losers for breakfast. Speed. Faster than fast, quicker than quick. I am Lightning.” -You potentially. <a href="https://charming-flannel-e1d.notion.site/Formula-RC-E-Information-f99b925ab89c4b0bad6cb52f06656185?pvs=4">HUH???</a></p>
+            </div>
 
-            </tr>
-        </table>
-    </section>
-    <section class="join" id="join">
-        <div class="join-container">
-            <div class="join-column-left">
-                <table>
-                    <tr>
-                        <th>Currently Hiring:</th>
-                    </tr>
-                    <tr>
-                        <td>Social Media Coordinator</td>
-                    </tr>
-                    <tr>
-                        <td>Graphic Designer</td>
-                    </tr>
-                    <tr>
-                        <td>VP of Web Development</td>
-                    </tr>
-                    <tr>
-                        <td>Hardware Team Gen. Members x4</td>
-                    </tr>
-                    <tr>
-                        <td>Event Coordination Team Gen. Members x2</td>
-                    </tr>
-                </table>
+            <div class="event">
+                <h2>BattleBots</h2>
+                <p>Build deadly robots. Make 'em destroy each other in parking lots. *Don't* bet money on it. Sound like a good time? You would. Nerd. Click <a href="https://charming-flannel-e1d.notion.site/BattleBots-the-not-t-m-one-dd7950b9283249348f1be7dad35750cb?pvs=4">here</a> to be one of us!</p>
             </div>
-            <div class="join-column-right">
-                <h1>Wanna be part of our cult?</h1>
-                <p>We got cookies :)</p>
-                <button onclick="location.href='https://forms.gle/focrYjSunUdscrqV7'">Apply!</button>
+
+            <div class="event">
+                <h2>Workshops</h2>
+                <p>We teach your bullies how to hammer and screw shit other than your mom. Also soldering? To see more detail (pinky promise it's not pictures of your mom), click <a href="https://charming-flannel-e1d.notion.site/Workshop-Schedule-9e9e4c6e0f534606abe9f73ed29d9b3b?pvs=4">here</a>. If you can't beat em, join em.</p>
             </div>
         </div>
-    </section>
-    <section class="contact" id="contact">
-        <h1>Contact Us.</h1>
-        <p>Or not. I'm not your dad.</p>
-        <div class="contact-content" >
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="51f0e425-eaeb-4556-8f09-15f1637ba529">
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" placeholder="John Cena" required><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="jCeens42069@hotmale.com" required><br>
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="5" cols="60" placeholder="You Can't See Me" required></textarea><br>
-                <input type="submit" value="Hit It!" />
-            </form>
-            <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    </div>
+    <div class="join" id="join">
+        <div class="join-column-left">
+            <h1>Currently Hiring:</h1>
+            <ul>
+                <li>
+                    Social Media Coordinator
+                </li>
+                <li>
+                    Graphic Designer
+                </li>
+                <li>
+                    VP of Web Development
+                </li>
+                <li>
+                    Hardware Team Gen. Members x4
+                </li>
+                <li>
+                    Event Coordination Team Gen. Members x2
+                </li>
+            </ul>
         </div>
-    </section>
+        <div class="join-column-right">
+            <h1>Wanna be part of our cult?</h1>
+            <p class="tagline">We got cookies :)</p>
+            <button onclick="location.href='https://forms.gle/focrYjSunUdscrqV7'">Apply!</button>
+        </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1>Contact Us.</h1>
+            <p class="tagline">Or not. I'm not your dad.</p>
+            <div class="contact-content" >
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="51f0e425-eaeb-4556-8f09-15f1637ba529">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="John Cena" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="jCeens42069@hotmale.com" required><br>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="5" cols="60" placeholder="You Can't See Me" required></textarea><br>
+                    <input type="submit" value="Hit It!" />
+                </form>
+                <script src="https://web3forms.com/client/script.js" async defer></script>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
     <div class="text">
