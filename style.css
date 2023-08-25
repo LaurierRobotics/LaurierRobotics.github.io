@@ -1,3 +1,10 @@
+:root {
+    --background: #f8f4f5;
+    --base: #010406;
+    --complementary: #e0b61d;
+    --accent: #fc006d;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +15,7 @@
 }
 
 html {
-    background-color: #f8f4f5;
+    background-color: var(--background);
 }
 
 .main-content {
@@ -19,16 +26,15 @@ html {
 }
 
 h1 {
-    padding: 240px 0 24px 0;
+    margin: 240px 0 24px 0;
 }
-
 
 h2 {
     padding: 16px;
 }
 
 a {
-    color: #fc006d;
+    color: var(--accent);
     text-decoration: underline;
 }
 
@@ -37,12 +43,11 @@ a {
     margin-bottom: 24px;
 }
 
-
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #f8f4f5;
+    background-color: var(--background);
     display: flex;
     align-items: center;
     padding: 12px;
@@ -52,13 +57,13 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #010406;
+    color: var(--base);
     padding: 12px 12px;
     background-color: transparent;
 }
 
 nav a:hover {
-    border-bottom: 2px solid #e0b61d;
+    border-bottom: 2px solid var(--complementary);
 }
 
 .logo {
@@ -66,7 +71,7 @@ nav a:hover {
     font-weight: bold;
     text-decoration: underline;
     background-color: transparent;
-    color: #fc006d;
+    color: var(--accent);
 }
 
 .logo:hover {
@@ -76,13 +81,14 @@ nav a:hover {
 button {
     padding: 12px 24px;
     font-size: 1rem;
-    color: #f8f4f5;
-    background: #fc006d;
+    color: var(--background);
+    background: var(--accent);
     cursor: pointer;
 }
 
 button:hover {
-    background: #041ade;
+    background: var(--complementary);
+    color: var(--base);
 }
 
 div {
@@ -106,8 +112,8 @@ div {
 
 .mission-punchline {
     font-weight: 700;
-    margin: -240px 0 24px 0;
-    color: #e0b61d;
+    margin: 0 0 24px 0;
+    color: var(--complementary);
     font-size: 3rem;
 }
 
@@ -119,19 +125,45 @@ div {
 }
 
 .person{
-    padding: 48px;
+    margin: 36px;
+    padding: 12px;
+}
+
+.person img {
+    width: 175px;
+    border: var(--base) solid 4px;
+    margin-bottom: 12px;
+}
+
+.presidents img {
+    background-color: var(--accent);
+    box-shadow: -8px 8px var(--complementary);
+}
+
+.vps img {
+    background-color: var(--complementary);
+    box-shadow: -8px 8px var(--accent);
 }
 
 .project-card{
-    padding: 36px;
+    padding: 20px;
+    margin: 16px;
     max-width: 40%;
     min-width: 300px;
+    text-align: left;
+    border: solid 4px var(--base);
+    box-shadow: -20px 20px var(--complementary);
+
 }
 
 .event{
-    padding: 36px;
+    padding: 20px;
+    margin: 16px;
     max-width: 33%;
     min-width: 300px;
+    text-align: left;
+    border: solid 4px var(--base);
+    box-shadow: -20px 20px var(--accent);
 }
 
 .join-column-left, .join-column-right {
@@ -142,15 +174,19 @@ div {
 .join-column-left ul {
     list-style-type: none;
     text-align: left;
+    border: 4px solid var(--base);
+    box-shadow: -12px 12px var(--complementary);
+    padding: 16px;
 }
 
 form {
     max-width: 40%;
     min-width: 400px;
     margin: auto;
-    border-radius: 5px;
     background-color: white;
     padding: 20px;
+    border: solid 4px var(--base);
+    box-shadow: -20px 20px var(--complementary);
 }
 
 input, textarea {
@@ -169,28 +205,30 @@ input, textarea {
 input[type=submit] {
     padding: 0.5rem 3rem;
     font-size: 1rem;
-    color: #f8f4f5;
-    background: #fc006d;
+    color: var(--background);
+    background: var(--accent);
     cursor: pointer;
+    border-radius: 0;
 }
 
 input[type=submit]:hover {
-    background: #041ade;
+    background: var(--complementary);
+    color: var(--base);
 }
 
 footer {
     margin-top: 96px;
     width: 100%;
-    background-color: #010406;
+    background-color: var(--base);
     padding: 24px;
 }
 
 footer h2{
-    color: white;
+    color: var(--background);
 }
 
 footer p{
-    color: #e0b61d;
+    color: var(--complementary);
     padding-bottom: 1.5rem;
 }
 
