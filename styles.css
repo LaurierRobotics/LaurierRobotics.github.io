@@ -99,10 +99,14 @@ div {
     padding-top: 80px;
 }
 
-.hero img {
+.hero-desktop {
     display: block;
     width: 90%;
     margin: 30px auto;
+}
+
+.hero-mobile {
+    display: none;
 }
 
 .about {
@@ -241,6 +245,15 @@ footer p{
     .nav-items a{
         display: none;
     }
+    .hero-desktop {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
     form {
         max-width: 65%;
         min-width: 480px;
@@ -256,6 +269,7 @@ footer p{
         justify-content: center;
         text-align: center;
     }
+
     form {
         max-width: 100%;
         min-width: 200px;
